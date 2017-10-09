@@ -1,0 +1,109 @@
+2017-07-31 22:03:23,132 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2017-07-31 22:03:23,135 DEBUG    root            Running [gcloud.init] with arguments: []
+2017-07-31 22:03:23,135 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2017-07-31 22:03:23,137 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2017-07-31 22:03:23,141 INFO     ___FILE_ONLY___ core:
+  account: natlang@natural-language-175316.iam.gserviceaccount.com
+  disable_usage_reporting: 'False'
+  project: gcloudflask
+
+2017-07-31 22:03:23,141 INFO     ___FILE_ONLY___ 
+
+2017-07-31 22:04:01,226 INFO     ___FILE_ONLY___ Your current configuration has been set to: [doc-sentiments]
+
+
+2017-07-31 22:04:01,226 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2017-07-31 22:04:01,226 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2017-07-31 22:04:01,227 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2017-07-31 22:04:01,227 INFO     ___FILE_ONLY___ Checking network connection...
+2017-07-31 22:04:03,779 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2017-07-31 22:04:03,780 INFO     ___FILE_ONLY___ Network diagnostic (1/1 checks) passed.
+
+
+2017-07-31 22:04:11,577 INFO     ___FILE_ONLY___ You are logged in as: [leland.wu4@gmail.com].
+
+
+2017-07-31 22:04:11,591 INFO     oauth2client.client Refreshing access_token
+2017-07-31 22:04:17,808 INFO     ___FILE_ONLY___ Your current project has been set to: [doc-sentiments].
+
+
+2017-07-31 22:04:17,978 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2017-07-31 22:04:17,989 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2017-07-31 22:04:18,039 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+2017-07-31 22:04:18,040 INFO     root            Executing: [gcloud compute project-info describe]
+2017-07-31 22:04:18,042 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --verbosity: "none"]
+2017-07-31 22:04:27,412 INFO     ___FILE_ONLY___ Enabling service compute-component.googleapis.com on project 214677970423...
+
+2017-07-31 22:04:28,320 DEBUG    root            (gcloud.compute.project-info.describe) You do not have permission to access service [compute-component.googleapis.com:enable] (or it may not exist): Service 'compute-component.googleapis.com' not found or permission denied.
+Traceback (most recent call last):
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 797, in Execute
+    resources = args.calliope_command.Run(cli=self, args=args)
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 871, in Run
+    resources = command_instance.Run(args)
+  File "/Users/Leland/google-cloud-sdk/lib/surface/compute/project_info/describe.py", line 34, in Run
+    project=project_ref.projectId))])[0]
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 85, in MakeRequests
+    progress_tracker=progress_tracker,
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/request_helper.py", line 248, in MakeRequests
+    requests=requests, http=http, batch_url=batch_url)
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/batch_helper.py", line 101, in MakeRequests
+    batch_request_callback=batch_checker.BatchCheck)
+  File "/Users/Leland/google-cloud-sdk/lib/third_party/apitools/base/py/batch.py", line 222, in Execute
+    batch_http_request.Execute(http)
+  File "/Users/Leland/google-cloud-sdk/lib/third_party/apitools/base/py/batch.py", line 492, in Execute
+    self.__callback(response, exception)
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/batch_helper.py", line 71, in BatchCheck
+    enable_api.EnableServiceIfDisabled(project, service_token)
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/service_management/enable_api.py", line 133, in EnableServiceIfDisabled
+    operation = EnableServiceApiCall(project_id, service_name)
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/service_management/enable_api.py", line 65, in EnableServiceApiCall
+    _HandleStatusCode(e, exceptions.EnableServicePermissionDeniedException)
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/service_management/enable_api.py", line 30, in _HandleStatusCode
+    raise api_exc_class(exc)
+EnableServicePermissionDeniedException: You do not have permission to access service [compute-component.googleapis.com:enable] (or it may not exist): Service 'compute-component.googleapis.com' not found or permission denied.
+2017-07-31 22:04:28,328 ERROR    root            (gcloud.compute.project-info.describe) You do not have permission to access service [compute-component.googleapis.com:enable] (or it may not exist): Service 'compute-component.googleapis.com' not found or permission denied.
+2017-07-31 22:04:28,354 INFO     root            [compute project-info describe] has failed
+
+2017-07-31 22:04:28,354 INFO     ___FILE_ONLY___ Not setting default zone/region (this feature makes it easier to use
+[gcloud compute] by setting an appropriate default value for the
+--zone and --region flag).
+See https://cloud.google.com/compute/docs/gcloud-compute section on how to set
+default compute region and zone manually. If you would like [gcloud init] to be
+able to do this for you the next time you run it, make sure the
+Compute Engine API is enabled for your project on the
+https://console.developers.google.com/apis page.
+
+
+2017-07-31 22:04:28,355 DEBUG    root            Not configuring default .boto file. File already exists at [/Users/Leland/.boto].
+2017-07-31 22:04:28,355 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2017-07-31 22:04:28,355 INFO     ___FILE_ONLY___ * Commands that require authentication will use leland.wu4@gmail.com by default
+
+2017-07-31 22:04:28,355 INFO     ___FILE_ONLY___ * Commands will reference project `doc-sentiments` by default
+
+2017-07-31 22:04:28,355 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2017-07-31 22:04:28,356 INFO     ___FILE_ONLY___ This gcloud configuration is called [doc-sentiments]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2017-07-31 22:04:28,356 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2017-07-31 22:04:28,356 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2017-07-31 22:04:28,356 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2017-07-31 22:04:28,356 INFO     ___FILE_ONLY___ * Run `gcloud topic -h` to learn about advanced features of the SDK like arg files and output formatting
+
+2017-07-31 22:04:28,357 INFO     root            Display format "default".
+2017-07-31 22:04:28,376 DEBUG    root            Metrics reporting process started...

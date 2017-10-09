@@ -1,0 +1,9 @@
+2017-08-01 17:19:02,655 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2017-08-01 17:19:02,670 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'activate_service_account']
+2017-08-01 17:19:02,673 DEBUG    root            Running [gcloud.auth.activate-service-account] with arguments: [--key-file: "/Users/Leland/Desktop/woa/speechy-ed418ec1824a.json"]
+2017-08-01 17:19:02,722 DEBUG    oauth2client.crypt ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVkNDE4ZWMxODI0YTEzYmI5ZThhZWY4ZWUxZGQ0MDQyNTcxM2E3OGYifQ', 'eyJpc3MiOiJzcGVlY2h5QG1hc3Rlci1yaGluby0xNzU1MjEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvdXNlcmluZm8uZW1haWwgaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vYXV0aC9jbG91ZC1wbGF0Zm9ybSBodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL2FwcGVuZ2luZS5hZG1pbiBodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL2NvbXB1dGUiLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MDE2MjU5NDIsImlhdCI6MTUwMTYyMjM0Mn0', 'hwTSzBi9jANsUA7y5lKnFjDYCYmtEi-P9zsbUS7wuS0k4uWRhqlI7-KcYkEACOs2-qwjxBVirTEB3K5ZC6-ZRyqG86qrR4jq5zLwv7jnzioKp4Ik2Y6BRjXLTaJ_DlXM8ViEAM2wnsSr1Tag3QGw2udTvHdMltxYx1Oh49TOX0Acp4ofCRYc_-fa7GPhkbYryLNCOJ81Na9s3BnEpVMoo9_V84pjcvrQ1EPKqOQD8ikuHeex1JY55b2Cd4uJYUEq3jwUrmwXdOmekAwnfHzZd40avAsuOt4mxzNdSkTP38TJflGkEY2e2FdD9y0rMWqUZ7VXtUDvvZGaoGam5RyoUw']
+2017-08-01 17:19:02,722 INFO     oauth2client.client Refreshing access_token
+2017-08-01 17:19:03,006 INFO     ___FILE_ONLY___ Activated service account credentials for: [speechy@master-rhino-175521.iam.gserviceaccount.com]
+
+2017-08-01 17:19:03,014 INFO     root            Display format "none".
+2017-08-01 17:19:03,037 DEBUG    root            Metrics reporting process started...

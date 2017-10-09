@@ -1,0 +1,134 @@
+2017-07-11 22:12:12,959 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2017-07-11 22:12:12,962 DEBUG    root            Running [gcloud.init] with arguments: []
+2017-07-11 22:12:12,962 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2017-07-11 22:12:12,969 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2017-07-11 22:12:12,969 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2017-07-11 22:12:12,969 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2017-07-11 22:12:12,970 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2017-07-11 22:12:12,970 INFO     ___FILE_ONLY___ Checking network connection...
+2017-07-11 22:12:14,498 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2017-07-11 22:12:14,499 INFO     ___FILE_ONLY___ Network diagnostic (1/1 checks) passed.
+
+
+2017-07-11 22:12:15,996 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2017-07-11 22:12:16,018 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2017-07-11 22:12:16,020 INFO     root            Executing: [gcloud auth login --force --brief]
+2017-07-11 22:12:16,021 DEBUG    root            Running [gcloud.auth.login] with arguments: [--brief: "True", --force: "True"]
+2017-07-11 22:12:16,952 INFO     ___FILE_ONLY___ Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&access_type=offline
+
+
+
+2017-07-11 22:12:24,175 INFO     oauth2client.client Successfully retrieved access token
+2017-07-11 22:12:24,193 INFO     root            Display format "none".
+2017-07-11 22:12:24,197 DEBUG    root            Checking for updates...
+2017-07-11 22:12:24,660 DEBUG    root            Updating notification cache...
+2017-07-11 22:12:24,668 INFO     ___FILE_ONLY___ You are logged in as: [leland.wu4@gmail.com].
+
+
+2017-07-11 22:12:40,050 INFO     ___FILE_ONLY___ Your current project has been set to: [gcloudflask].
+
+
+2017-07-11 22:12:40,273 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2017-07-11 22:12:40,280 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2017-07-11 22:12:40,437 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+2017-07-11 22:12:40,438 INFO     root            Executing: [gcloud compute project-info describe]
+2017-07-11 22:12:40,441 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --verbosity: "none"]
+2017-07-11 22:12:47,287 INFO     ___FILE_ONLY___ Enabling service compute-component.googleapis.com on project 388794615064...
+
+2017-07-11 22:12:48,227 DEBUG    root            (gcloud.compute.project-info.describe) FAILED_PRECONDITION: Operation does not satisfy the following requirements: billing-enabled {Billing must be enabled for activation of service '' in project 'gcloudflask' to proceed., https://console.developers.google.com/project/gcloudflask/settings}
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - type: BILLING
+Traceback (most recent call last):
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 797, in Execute
+    resources = args.calliope_command.Run(cli=self, args=args)
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 871, in Run
+    resources = command_instance.Run(args)
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/surface/compute/project_info/describe.py", line 34, in Run
+    project=project_ref.projectId))])[0]
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 83, in MakeRequests
+    errors=errors))
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/request_helper.py", line 172, in MakeRequests
+    requests=requests, http=http, batch_url=batch_url)
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/batch_helper.py", line 101, in MakeRequests
+    batch_request_callback=batch_checker.BatchCheck)
+  File "/Users/Leland/Desktop/./google-cloud-sdk/lib/third_party/apitools/base/py/batch.py", line 222, in Execute
+    batch_http_request.Execute(http)
+  File "/Users/Leland/Desktop/./google-cloud-sdk/lib/third_party/apitools/base/py/batch.py", line 492, in Execute
+    self.__callback(response, exception)
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/batch_helper.py", line 71, in BatchCheck
+    enable_api.EnableServiceIfDisabled(project, service_token)
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/service_management/enable_api.py", line 133, in EnableServiceIfDisabled
+    operation = EnableServiceApiCall(project_id, service_name)
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/service_management/enable_api.py", line 65, in EnableServiceApiCall
+    _HandleStatusCode(e, exceptions.EnableServicePermissionDeniedException)
+  File "/Users/Leland/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/service_management/enable_api.py", line 32, in _HandleStatusCode
+    raise exc
+HttpException: FAILED_PRECONDITION: Operation does not satisfy the following requirements: billing-enabled {Billing must be enabled for activation of service '' in project 'gcloudflask' to proceed., https://console.developers.google.com/project/gcloudflask/settings}
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - type: BILLING
+2017-07-11 22:12:48,234 ERROR    root            (gcloud.compute.project-info.describe) FAILED_PRECONDITION: Operation does not satisfy the following requirements: billing-enabled {Billing must be enabled for activation of service '' in project 'gcloudflask' to proceed., https://console.developers.google.com/project/gcloudflask/settings}
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - type: BILLING
+2017-07-11 22:12:48,285 INFO     root            [compute project-info describe] has failed
+
+2017-07-11 22:12:48,285 INFO     ___FILE_ONLY___ Not setting default zone/region (this feature makes it easier to use
+[gcloud compute] by setting an appropriate default value for the
+--zone and --region flag).
+See https://cloud.google.com/compute/docs/gcloud-compute section on how to set
+default compute region and zone manually. If you would like [gcloud init] to be
+able to do this for you the next time you run it, make sure the
+Compute Engine API is enabled for your project on the
+https://console.developers.google.com/apis page.
+
+
+2017-07-11 22:12:48,286 DEBUG    root            Executing command: ['/Users/Leland/Desktop/google-cloud-sdk/bin/gsutil', 'config', '-n', '-o', '/Users/Leland/.boto']
+2017-07-11 22:12:53,427 DEBUG    ___FILE_ONLY___ 
+2017-07-11 22:12:53,430 DEBUG    ___FILE_ONLY___ This command will create a boto config file at /Users/Leland/.boto
+containing your credentials, based on your responses to the following
+questions.
+
+Boto config file "/Users/Leland/.boto" created. If you need to use a
+proxy to access the Internet please see the instructions in that file.
+
+2017-07-11 22:12:53,430 INFO     ___FILE_ONLY___ Created a default .boto configuration file at [/Users/Leland/.boto]. See this file and
+[https://cloud.google.com/storage/docs/gsutil/commands/config] for more
+information about configuring Google Cloud Storage.
+
+2017-07-11 22:12:53,430 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2017-07-11 22:12:53,431 INFO     ___FILE_ONLY___ * Commands that require authentication will use leland.wu4@gmail.com by default
+
+2017-07-11 22:12:53,431 INFO     ___FILE_ONLY___ * Commands will reference project `gcloudflask` by default
+
+2017-07-11 22:12:53,431 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2017-07-11 22:12:53,432 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2017-07-11 22:12:53,432 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2017-07-11 22:12:53,432 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2017-07-11 22:12:53,432 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2017-07-11 22:12:53,432 INFO     ___FILE_ONLY___ * Run `gcloud topic -h` to learn about advanced features of the SDK like arg files and output formatting
+
+2017-07-11 22:12:53,433 INFO     root            Display format "default".
+2017-07-11 22:12:53,451 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,10 @@
+2017-08-01 17:19:25,530 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2017-08-01 17:19:25,537 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application_default']
+2017-08-01 17:19:25,550 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'application-default', 'print_access_token']
+2017-08-01 17:19:25,552 DEBUG    root            Running [gcloud.auth.application-default.print-access-token] with arguments: []
+2017-08-01 17:19:25,622 DEBUG    oauth2client.crypt ['eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVkNDE4ZWMxODI0YTEzYmI5ZThhZWY4ZWUxZGQ0MDQyNTcxM2E3OGYifQ', 'eyJpc3MiOiJzcGVlY2h5QG1hc3Rlci1yaGluby0xNzU1MjEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJzY29wZSI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvY2xvdWQtcGxhdGZvcm0iLCJhdWQiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvdG9rZW4iLCJleHAiOjE1MDE2MjU5NjUsImlhdCI6MTUwMTYyMjM2NX0', 'eXkwDHklJr4OwRzahT2BISgQe23OhULX2G_Ey6NXfeTld6KpHmf9PQ31ZBaSlRl5ujSrilhHzdeuc2rsvxekKCXsoSecvYj8-UCroEB91iU8ywiX-5zcmyumGgp-nPyt-mEs-CDoWR-ei_oyD3Rh8adN1hcHIABuZNVfiHP1wLnw_iPTF1dr986q20wbQV0hOkKSerc3-w1cNB4TfJhpQ-igSEUtCiFvshdVoKKIN7UdjqzSuFGc5AvSqTkKjCaYWJ-HZ0arTWdbatuTN0zbN2vEvlfCtqISEflVZFXWvPj0htrgi_5stmyIo9lOzAqS6qguHvZ4EwANDwE5zHg2Sg']
+2017-08-01 17:19:25,622 INFO     oauth2client.client Refreshing access_token
+2017-08-01 17:19:25,806 INFO     root            Display format "value(access_token)".
+2017-08-01 17:19:25,806 INFO     ___FILE_ONLY___ ya29.ElqaBIL-0KNKG7zqY_44u7zWzoIiDnZHykxAnUX9-PjBC439J4ao-89tLF5KnWJ2xfl_7BQl2L1KFi-62GvF0IUpljbF6vVUbfU-kzjfpMybL9hdb2czOObnjME
+
+2017-08-01 17:19:25,824 DEBUG    root            Metrics reporting process started...

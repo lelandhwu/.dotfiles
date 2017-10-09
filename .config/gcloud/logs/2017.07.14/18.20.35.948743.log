@@ -1,0 +1,34 @@
+2017-07-14 18:20:35,950 DEBUG    root            Loaded Command Group: ['gcloud', 'app']
+2017-07-14 18:20:36,091 DEBUG    root            Loaded Command Group: ['gcloud', 'app', 'deploy']
+2017-07-14 18:20:36,094 DEBUG    root            Running [gcloud.app.deploy] with arguments: []
+2017-07-14 18:20:36,105 DEBUG    root            No staging command found for runtime [python27] and environment [STANDARD].
+2017-07-14 18:20:36,118 INFO     oauth2client.client Refreshing access_token
+2017-07-14 18:20:36,532 DEBUG    root            API endpoint: [https://appengine.googleapis.com/], API version: [v1]
+2017-07-14 18:20:37,290 DEBUG    root            HttpError accessing <https://appengine.googleapis.com/v1/apps/gcloudflask?alt=json>: response: <{'status': '404', 'content-length': '126', 'x-xss-protection': '1; mode=block', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'vary': 'Origin, X-Origin, Referer', 'server': 'ESF', '-content-encoding': 'gzip', 'cache-control': 'private', 'date': 'Fri, 14 Jul 2017 22:20:37 GMT', 'x-frame-options': 'SAMEORIGIN', 'alt-svc': 'quic=":443"; ma=2592000; v="39,38,37,36,35"', 'content-type': 'application/json; charset=UTF-8'}>, content <{
+  "error": {
+    "code": 404,
+    "message": "Could not find Application \"gcloudflask\".",
+    "status": "NOT_FOUND"
+  }
+}
+>
+2017-07-14 18:20:37,291 DEBUG    root            No app found:
+Traceback (most recent call last):
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/command_lib/app/deploy_util.py", line 499, in _PossiblyCreateApp
+    return api_client.GetApplication()
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/appengine_api_client.py", line 50, in GetApplication
+    return requests.MakeRequest(self.client.apps.Get, request)
+  File "/Users/Leland/google-cloud-sdk/lib/googlecloudsdk/api_lib/app/api/requests.py", line 70, in MakeRequest
+    raise err
+NotFoundError: The requested resource was not found.
+2017-07-14 18:20:37,293 INFO     ___FILE_ONLY___ You are creating an app for project [gcloudflask].
+
+2017-07-14 18:20:37,293 WARNING  root            Creating an App Engine application for a project is irreversible and the region
+cannot be changed. More information about regions is at
+https://cloud.google.com/appengine/docs/locations.
+
+2017-07-14 18:21:43,057 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

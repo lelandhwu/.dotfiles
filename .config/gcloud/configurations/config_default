@@ -1,0 +1,4 @@
+[core]
+account = natlang@natural-language-175316.iam.gserviceaccount.com
+project = gcloudflask
+

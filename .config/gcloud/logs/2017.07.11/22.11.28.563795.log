@@ -1,0 +1,27 @@
+2017-07-11 22:11:28,686 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2017-07-11 22:11:28,689 DEBUG    root            Running [gcloud.init] with arguments: []
+2017-07-11 22:11:28,689 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2017-07-11 22:11:28,696 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2017-07-11 22:11:28,696 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2017-07-11 22:11:28,696 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2017-07-11 22:11:28,697 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2017-07-11 22:11:28,697 INFO     ___FILE_ONLY___ Checking network connection...
+2017-07-11 22:11:31,081 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2017-07-11 22:11:31,081 INFO     ___FILE_ONLY___ Network diagnostic (1/1 checks) passed.
+
+
+2017-07-11 22:11:31,145 DEBUG    oauth2client.contrib.multistore_file Initializing empty multistore file
+2017-07-11 22:11:34,159 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

@@ -1,0 +1,10 @@
+2017-07-31 22:03:02,868 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2017-07-31 22:03:02,881 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2017-07-31 22:03:02,884 DEBUG    root            Running [gcloud.components.install] with arguments: [COMPONENT-IDS:1: "['app-engine-python']"]
+2017-07-31 22:03:03,549 INFO     ___FILE_ONLY___ 
+
+2017-07-31 22:03:03,550 INFO     ___FILE_ONLY___ All components are up to date.
+
+2017-07-31 22:03:03,552 DEBUG    root            Updating notification cache...
+2017-07-31 22:03:03,553 INFO     root            Display format "none".
+2017-07-31 22:03:03,571 DEBUG    root            Metrics reporting process started...

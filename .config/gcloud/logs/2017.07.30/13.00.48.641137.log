@@ -1,0 +1,278 @@
+2017-07-30 13:00:48,648 DEBUG    root            Loaded Command Group: ['gcloud', 'ml']
+2017-07-30 13:00:48,654 DEBUG    root            Loaded Command Group: ['gcloud', 'ml', 'language']
+2017-07-30 13:00:48,676 DEBUG    root            Loaded Command Group: ['gcloud', 'ml', 'language', 'analyze_entities']
+2017-07-30 13:00:48,679 DEBUG    root            Running [gcloud.ml.language.analyze-entities] with arguments: [--content: "Michelangelo Caravaggio, Italian painter, is known for 'The Calling of Saint Matthew'."]
+2017-07-30 13:00:49,144 INFO     root            Display format "json".
+2017-07-30 13:00:49,151 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,151 INFO     ___FILE_ONLY___ 
+  
+2017-07-30 13:00:49,152 INFO     ___FILE_ONLY___ "entities"
+2017-07-30 13:00:49,152 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,152 INFO     ___FILE_ONLY___ [
+    
+2017-07-30 13:00:49,152 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,152 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ "mentions"
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ [
+        
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ 
+          
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ "text"
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,153 INFO     ___FILE_ONLY___ 
+            
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ "beginOffset"
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ 0
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ ,
+            
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ "content"
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ "Michelangelo Caravaggio"
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ 
+          
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ ,
+          
+2017-07-30 13:00:49,154 INFO     ___FILE_ONLY___ "type"
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ "PROPER"
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ 
+        
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ ,
+        
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ 
+          
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ "text"
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ 
+            
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ "beginOffset"
+2017-07-30 13:00:49,155 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ 33
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ ,
+            
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ "content"
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ "painter"
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ 
+          
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ ,
+          
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ "type"
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ "COMMON"
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ 
+        
+2017-07-30 13:00:49,156 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ ]
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ "metadata"
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ 
+        
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ "mid"
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ "/m/020bg"
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ ,
+        
+2017-07-30 13:00:49,157 INFO     ___FILE_ONLY___ "wikipedia_url"
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ "http://en.wikipedia.org/wiki/Caravaggio"
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ "name"
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ "Michelangelo Caravaggio"
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ "salience"
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ 0.8303663
+2017-07-30 13:00:49,158 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ "type"
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ "PERSON"
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ 
+    
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ ,
+    
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,159 INFO     ___FILE_ONLY___ "mentions"
+2017-07-30 13:00:49,160 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,160 INFO     ___FILE_ONLY___ [
+        
+2017-07-30 13:00:49,160 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,160 INFO     ___FILE_ONLY___ 
+          
+2017-07-30 13:00:49,160 INFO     ___FILE_ONLY___ "text"
+2017-07-30 13:00:49,160 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,160 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ 
+            
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ "beginOffset"
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ 25
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ ,
+            
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ "content"
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ "Italian"
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ 
+          
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ ,
+          
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ "type"
+2017-07-30 13:00:49,161 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ "PROPER"
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ 
+        
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ ]
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ "metadata"
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ 
+        
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ "mid"
+2017-07-30 13:00:49,162 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ "/m/03rjj"
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ ,
+        
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ "wikipedia_url"
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ "http://en.wikipedia.org/wiki/Italy"
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ "name"
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ "Italian"
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,163 INFO     ___FILE_ONLY___ "salience"
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ 0.1387151
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ "type"
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ "LOCATION"
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ 
+    
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ ,
+    
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,164 INFO     ___FILE_ONLY___ "mentions"
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ [
+        
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ 
+          
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ "text"
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ 
+            
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ "beginOffset"
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,165 INFO     ___FILE_ONLY___ 56
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ ,
+            
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ "content"
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ "The Calling of Saint Matthew"
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ 
+          
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ ,
+          
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ "type"
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ "PROPER"
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ 
+        
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,166 INFO     ___FILE_ONLY___ ]
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ "metadata"
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ {
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ 
+        
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ "mid"
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ "/m/085_p7"
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ ,
+        
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ "wikipedia_url"
+2017-07-30 13:00:49,167 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,168 INFO     ___FILE_ONLY___ "http://en.wikipedia.org/wiki/The_Calling_of_St_Matthew_(Caravaggio)"
+2017-07-30 13:00:49,168 INFO     ___FILE_ONLY___ 
+      
+2017-07-30 13:00:49,168 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,168 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,168 INFO     ___FILE_ONLY___ "name"
+2017-07-30 13:00:49,168 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,168 INFO     ___FILE_ONLY___ "The Calling of Saint Matthew"
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ "salience"
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ 0.030918568
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ ,
+      
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ "type"
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ "EVENT"
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ 
+    
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ 
+  
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ ]
+2017-07-30 13:00:49,169 INFO     ___FILE_ONLY___ ,
+  
+2017-07-30 13:00:49,170 INFO     ___FILE_ONLY___ "language"
+2017-07-30 13:00:49,170 INFO     ___FILE_ONLY___ : 
+2017-07-30 13:00:49,170 INFO     ___FILE_ONLY___ "en"
+2017-07-30 13:00:49,170 INFO     ___FILE_ONLY___ 
+
+2017-07-30 13:00:49,170 INFO     ___FILE_ONLY___ }
+2017-07-30 13:00:49,170 INFO     ___FILE_ONLY___ 
+
+2017-07-30 13:00:49,183 DEBUG    root            Metrics reporting process started...
