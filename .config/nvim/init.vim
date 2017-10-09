@@ -30,4 +30,7 @@ set noswapfile
 set number
 set incsearch
 set hlsearch
-
+set softtabstop=8         " unify
+set shiftwidth=8          " indent/outdent by 8 columns
+set shiftround            " always indent/outdent to the nearest tabstop
+set expandtab             " use spaces instead of tabs
